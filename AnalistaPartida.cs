@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,14 +12,14 @@ namespace ProyectoInicial
 {
     public partial class AnalistaPartidas : Form
     {
-        public string Partida;
-        public int Turno = 1;
-        public int Leector = 0;
-        List<string> LineasJugadas;
-        public int StrikePlayer1 = 0;
-        public int StrikePlayer2 = 0; 
-        public int SparePlayer1 = 0; 
-        public int SparePlayer2 = 0;
+        public string Partida; // Indica que archivo se va a seleccionar.
+        public int Turno = 1; // indica de que player es el turno
+        public int Leector = 0; // Indica si ese esta leyendo un archivo.
+        List<string> LineasJugadas; // Juego expresado en una lista.
+        public int StrikePlayer1 = 0;  // indica si el player 1 hizo strike
+        public int StrikePlayer2 = 0; // indica si el player 2  hizo strike
+        public int SparePlayer1 = 0; // indica si el player 1 hizo spare
+        public int SparePlayer2 = 0;// indica si el player 2 hizo spare
 
         public AnalistaPartidas()
         {
