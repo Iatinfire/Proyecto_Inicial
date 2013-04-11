@@ -22,7 +22,17 @@ namespace Poyecto_UnitTest
             bool actualValue = false;
             ApplicationCodeClass appObject = new ApplicationCodeClass();
 
-            string actualResult = appObject.combineArrayStringWithSpace(AnalistaPartidas.PrimerTiroPlayer1()());
+            string actualResult = appObject.combineArrayStringWithSpace(AnalistaPartidas.PrimerTiroPlayer1());
+            Assert.AreEqual<string>(expectedResult, actualResult);
+        }
+
+        public void PrimerTiroPlayer2_Test()
+        {
+            bool expectedResult = true;
+            bool actualValue = false;
+            ApplicationCodeClass appObject = new ApplicationCodeClass();
+
+            string actualResult = appObject.combineArrayStringWithSpace(AnalistaPartidas.PrimerTiroPlayer2());
             Assert.AreEqual<string>(expectedResult, actualResult);
         }
         
